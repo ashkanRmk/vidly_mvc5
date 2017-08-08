@@ -73,3 +73,12 @@ C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vi
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addMembershipType.resources
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipType.resources
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyNotationToCustomerName.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addNameToMembershipType.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershipType.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddBirthdayToCustomer.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.update.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenreMovie.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenreMovie1.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMovies.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPropertyToMovie.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addNS.resources
