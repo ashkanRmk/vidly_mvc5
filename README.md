@@ -1,2 +1,2 @@
-# Vidly(Video Renting Management System)
-A Simple Video Renting Management Web Application with ASP.NET MVC 5 
+# Vidly(Video Rental Management System)
+A Simple Video Rental Management Web Application with ASP.NET MVC 5 
