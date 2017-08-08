@@ -1,25 +1,29 @@
-﻿@model Vidly.ViewModel.IndexCustomerViewModel
+﻿@model IEnumerable<Vidly.Models.Customers>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h1>Customers</h1>
-@if (Model.Customers.Count == 0)
+
+@if (!Model.Any())
 {
-    <text>We don't have any customers.</text>
+    <p> We don't have any customers yet.</p>
 }
 else
 {
     <table class="table table-bordered table-hover">
-        <tr>
-            <th>Customers Name</th>
-        </tr>
-        @foreach (var customer in Model.Customers)
-        {
+        <thead>
             <tr>
-                <td>@Html.ActionLink(@customer.Name, "Details", "Customers", new {id = @customer.Id}, null)</td>
+                <th>Customers Name</th>
             </tr>
-        }
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(@customer.Name, "Details", "Customers", new { id = @customer.Id }, null)</td>
+                </tr>
+            }
+        </tbody>
     </table>
-
 }

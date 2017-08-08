@@ -1,8 +1,31 @@
-﻿
+﻿@model IEnumerable <Vidly.Models.Movie>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Movies</h2>
 
+@if (!Model.Any())
+{
+    <text>We don't have any customers.</text>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Movies Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>@movie.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}

@@ -67,3 +67,9 @@ c:\users\moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\Microsof
 c:\users\moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
 c:\users\moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.dll
 c:\users\moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribedTo.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addMembershipType.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipType.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyNotationToCustomerName.resources
