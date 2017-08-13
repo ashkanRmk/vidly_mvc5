@@ -293,12 +293,12 @@ intellisense.annotate(jQuery, {
   },
   'param': function() {
     /// <signature>
-    ///   <summary>Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.</summary>
+    ///   <summary>Save a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.</summary>
     ///   <param name="obj" type="Object">An array or object to serialize.</param>
     ///   <returns type="String" />
     /// </signature>
     /// <signature>
-    ///   <summary>Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.</summary>
+    ///   <summary>Save a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.</summary>
     ///   <param name="obj" type="Object">An array or object to serialize.</param>
     ///   <param name="traditional" type="Boolean">A Boolean indicating whether to perform a traditional "shallow" serialization.</param>
     ///   <returns type="String" />
@@ -1057,12 +1057,12 @@ intellisense.annotate(jQuery.fn, {
   },
   'clone': function() {
     /// <signature>
-    ///   <summary>Create a deep copy of the set of matched elements.</summary>
+    ///   <summary>Save a deep copy of the set of matched elements.</summary>
     ///   <param name="withDataAndEvents" type="Boolean">A Boolean indicating whether event handlers should be copied along with the elements. As of jQuery 1.4, element data will be copied as well.</param>
     ///   <returns type="jQuery" />
     /// </signature>
     /// <signature>
-    ///   <summary>Create a deep copy of the set of matched elements.</summary>
+    ///   <summary>Save a deep copy of the set of matched elements.</summary>
     ///   <param name="withDataAndEvents" type="Boolean">A Boolean indicating whether event handlers and data should be copied along with the elements. The default value is false. *In jQuery 1.5.0 the default value was incorrectly true; it was changed back to false in 1.5.1 and up.</param>
     ///   <param name="deepWithDataAndEvents" type="Boolean">A Boolean indicating whether event handlers and data for all children of the cloned element should be copied. By default its value matches the first argument's value (which defaults to false).</param>
     ///   <returns type="jQuery" />

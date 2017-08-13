@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly.ViewModel;
 
 namespace Vidly.Controllers
 {
@@ -17,6 +18,36 @@ namespace Vidly.Controllers
         protected override void Dispose(bool disposing)
         {
             _context.Dispose();
+        }
+
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+
+            var viewModel = new CustomerFormViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+            return View("CustomerForm", viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Save(Customers customers)
+        {
+            if (customers.Id == 0)
+                _context.customers.Add(customers);
+            else
+            {
+                var CustomerInDb = _context.customers.Single(m => m.Id == customers.Id);
+
+                CustomerInDb.Name = customers.Name;
+                CustomerInDb.Birthday = customers.Birthday;
+                CustomerInDb.IsSubscribedToNewsletter = customers.IsSubscribedToNewsletter;
+                CustomerInDb.MembershipTypeId = customers.MembershipTypeId;
+            }
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Customers");
         }
 
         // GET: Customers
@@ -37,6 +68,22 @@ namespace Vidly.Controllers
             }
 
             return View(customer);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.customers.SingleOrDefault(m => m.Id == id);
+
+            if (customer == null)
+                return HttpNotFound();
+
+            var viewModel = new CustomerFormViewModel
+            {
+                Customers = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            };
+
+            return View("CustomerForm", viewModel);
         }
     }
 }
