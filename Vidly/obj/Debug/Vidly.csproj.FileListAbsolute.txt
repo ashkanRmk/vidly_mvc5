@@ -82,3 +82,14 @@ C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vi
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMovies.resources
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPropertyToMovie.resources
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addNS.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addProp.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.populateGenre.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.RequierNameCustomer.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\AutoMapper.dll
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\AutoMapper.xml
