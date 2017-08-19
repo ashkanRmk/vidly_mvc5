@@ -93,3 +93,4 @@ C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.W
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\AutoMapper.dll
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\AutoMapper.xml
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
