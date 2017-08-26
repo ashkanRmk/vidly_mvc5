@@ -94,3 +94,13 @@ C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\System.W
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\AutoMapper.dll
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\AutoMapper.xml
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToRegisterUser.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToRegisterUser1.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToRegisterUser2.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddRentalModel.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddRentalModel1.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.addAvailablityMovies.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vidly.Migrations.setAvailibility.resources
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\Toast.exe
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\Toaster.dll
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\ToolBelt.dll
