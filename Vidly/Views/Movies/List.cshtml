@@ -6,10 +6,10 @@
 
 <h2>Movies</h2>
 <p>
-   @Html.ActionLink("New Movie", "New", "Movies", null, new { @class = "btn btn-primary" }) 
+    @Html.ActionLink("New Movie", "New", "Movies", null, new {@class = "btn btn-primary"})
 </p>
 
-<table id="movies" class="table table-bordered table-hover">
+<table id="movies" class="table table-bordered table-hover table-responsive display nowrap" cellspacing="0" width="100%">
     <thead>
         <tr>
             <th>Movies Name</th>
@@ -26,6 +26,12 @@
     <script>
         $(document).ready(function() {
             var table = $("#movies").DataTable({
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+
+                responsive: true,
+
                 ajax: {
                     url: "/api/Movies",
                     dataSrc: ""
@@ -48,6 +54,9 @@
                     }
                 ]
             });
+
+            //new $.fn.dataTable.FixedHeader(table);
+
             $("#movies").on("click", ".js-delete", function() {
                 var button = $(this);
                 bootbox.confirm("Are you sure to Delete Movie?", function(result) {

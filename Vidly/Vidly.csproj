@@ -18,7 +18,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44353</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -118,6 +118,18 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="Toast, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Toaster.2.1.10716.0\lib\net45\Toast.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Toaster, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Toaster.2.1.10716.0\lib\net45\Toaster.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ToolBelt, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Toaster.2.1.10716.0\lib\net45\ToolBelt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -188,14 +200,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\NewRentalController.cs" />
     <Compile Include="Dtos\CustomerDto.cs" />
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -271,6 +286,34 @@
     <Compile Include="Migrations\201708182032500_SeedUsers.Designer.cs">
       <DependentUpon>201708182032500_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708191519208_AddDrivingLicenseToRegisterUser.cs" />
+    <Compile Include="Migrations\201708191519208_AddDrivingLicenseToRegisterUser.Designer.cs">
+      <DependentUpon>201708191519208_AddDrivingLicenseToRegisterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708191520250_AddDrivingLicenseToRegisterUser1.cs" />
+    <Compile Include="Migrations\201708191520250_AddDrivingLicenseToRegisterUser1.Designer.cs">
+      <DependentUpon>201708191520250_AddDrivingLicenseToRegisterUser1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708191530023_AddDrivingLicenseToRegisterUser2.cs" />
+    <Compile Include="Migrations\201708191530023_AddDrivingLicenseToRegisterUser2.Designer.cs">
+      <DependentUpon>201708191530023_AddDrivingLicenseToRegisterUser2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708241302371_AddRentalModel.cs" />
+    <Compile Include="Migrations\201708241302371_AddRentalModel.Designer.cs">
+      <DependentUpon>201708241302371_AddRentalModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708241304056_AddRentalModel1.cs" />
+    <Compile Include="Migrations\201708241304056_AddRentalModel1.Designer.cs">
+      <DependentUpon>201708241304056_AddRentalModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708241324287_addAvailablityMovies.cs" />
+    <Compile Include="Migrations\201708241324287_addAvailablityMovies.Designer.cs">
+      <DependentUpon>201708241324287_addAvailablityMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708241325436_setAvailibility.cs" />
+    <Compile Include="Migrations\201708241325436_setAvailibility.Designer.cs">
+      <DependentUpon>201708241325436_setAvailibility.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customers.cs" />
@@ -280,6 +323,8 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearOld.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Rental.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModel\CustomerFormViewModel.cs" />
@@ -397,17 +442,26 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\rowReorder.dataTables.min.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="Content\typeahead.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bloodhound.js" />
+    <Content Include="Scripts\bloodhound.min.js" />
     <Content Include="Scripts\bootbox.js" />
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\dataTables.rowReorder.min.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
     <Content Include="Scripts\DataTables\autoFill.foundation.js" />
@@ -482,6 +536,12 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\typeahead.bundle.js" />
+    <Content Include="Scripts\typeahead.bundle.min.js" />
+    <Content Include="Scripts\typeahead.jquery.js" />
+    <Content Include="Scripts\typeahead.jquery.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -526,6 +586,7 @@
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
     <Content Include="Views\Movies\ReadOnlyList.cshtml" />
+    <Content Include="Views\NewRental\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -593,6 +654,27 @@
     <EmbeddedResource Include="Migrations\201708182032500_SeedUsers.resx">
       <DependentUpon>201708182032500_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191519208_AddDrivingLicenseToRegisterUser.resx">
+      <DependentUpon>201708191519208_AddDrivingLicenseToRegisterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191520250_AddDrivingLicenseToRegisterUser1.resx">
+      <DependentUpon>201708191520250_AddDrivingLicenseToRegisterUser1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191530023_AddDrivingLicenseToRegisterUser2.resx">
+      <DependentUpon>201708191530023_AddDrivingLicenseToRegisterUser2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708241302371_AddRentalModel.resx">
+      <DependentUpon>201708241302371_AddRentalModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708241304056_AddRentalModel1.resx">
+      <DependentUpon>201708241304056_AddRentalModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708241324287_addAvailablityMovies.resx">
+      <DependentUpon>201708241324287_addAvailablityMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708241325436_setAvailibility.resx">
+      <DependentUpon>201708241325436_setAvailibility.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -612,7 +694,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49356</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49356/</IISUrl>
+          <IISUrl>https://localhost:44353/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
