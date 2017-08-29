@@ -104,3 +104,4 @@ C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\obj\Debug\Vi
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\Toast.exe
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\Toaster.dll
 C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\ToolBelt.dll
+C:\Users\Moonrise\documents\visual studio 2015\Projects\Vidly\Vidly\bin\WebActivatorEx.dll
