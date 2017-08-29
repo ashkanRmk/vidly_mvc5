@@ -3,21 +3,21 @@
 @{
     ViewBag.Title = "New Rental";
 }
-
-<h2>New Rental Form</h2>
+<h2><i class="fa fa-check"></i> New Rental Form</h2>
 
 <form id="newRental">
     <div class="form-group">
         <label>Customer</label>
         <div class="tt-container">
-            <input id="customer" name="customer" data-rule-validCustomer="true" required type="text" value="" class="form-control"/>
+            <input id="customer" name="customer" data-rule-validCustomer="true" required type="text" value="" class="form-control" placeholder="Customer Name"/>
         </div>
     </div>
 
     <div class="form-group">
         <label>Movie</label>
-        <div class="tt-container">
-            <input id="movie" name="movie" data-rule-atLeastOneMovie="true" type="text" value="" class="form-control" />
+        <div class="input-group margin-bottom-sm">
+            <span class="input-group-addon"><i class="fa fa-film "></i></span>
+            <input id="movie" name="movie" data-rule-atLeastOneMovie="true" class="form-control" type="text" placeholder="Movie Name">
         </div>
     </div>
 
@@ -28,7 +28,9 @@
     </div>
 
 
-    <Button class="btn btn-primary">Submit</Button>
+    <Button class="btn btn-primary">
+        <i class="fa fa-check-circle"></i> Submit
+    </Button>
 </form>
 
 @section scripts
@@ -81,7 +83,7 @@
                 display: 'name',
                 source: movies
             }).on("typeahead:select", function (e, movie) {
-                $("#movies").append("<li class='list-group-item'>" + movie.name + "</li>");
+                $("#movies").append("<li class='list-group-item'> <i class='fa fa-check-square'></i> " + movie.name + "</li>");
 
                 $("#movie").typeahead("val", "");
 
