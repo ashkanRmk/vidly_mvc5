@@ -6,13 +6,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            @Html.ActionLink("Vidly", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+                <i class="fa fa-film" ></i> Vidly</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("New Rental", "New", "NewRental")</li>
-                <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
-                <li>@Html.ActionLink("Movies", "Index", "Movies")</li>
+                <li>
+                    <a href="@Url.Action("New", "NewRental")">
+                        <i class="fa fa-check"></i> New Rental
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Customers")">
+                        <i class="fa fa-users"></i> Customers
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Movies")">
+                        <i class="fa fa-video-camera"></i> Movies
+                    </a>
+                </li>
             </ul>
             @Html.Partial("_LoginPartial")
         </div>
