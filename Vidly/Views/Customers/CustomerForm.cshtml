@@ -1,18 +1,21 @@
-﻿@model Vidly.ViewModel.CustomerFormViewModel
+﻿@using System.Web.UI.WebControls
+@model Vidly.ViewModel.CustomerFormViewModel
 @{
     ViewBag.Title = "New";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Title</h2>
+<h2><i class="fa fa-edit"></i> @Model.Title</h2>
 
 @using (@Html.BeginForm("Save", "Customers"))
 {
     @Html.ValidationSummary()
     <div class="form-group">
         @Html.LabelFor(m => m.Customers.Name)
-        @Html.TextBoxFor(m => m.Customers.Name, new {@class = "form-control"})
-        @Html.ValidationMessageFor(m => m.Customers.Name)
+        <div class="input-group margin-bottom-sm">
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            @Html.TextBoxFor(m => m.Customers.Name, new { placeholder = "Customer Name", @class = "form-control" })
+        </div>
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Customers.MembershipTypeId)
@@ -21,7 +24,10 @@
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Customers.Birthday)
-        @Html.TextBoxFor(m => m.Customers.Birthday, "{0:d MMM yyyy}", new {@class = "form-control"})
+        <div class="input-group margin-bottom-sm">
+            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+            @Html.TextBoxFor(m => m.Customers.Birthday, "{0:d MMM yyyy}", new { placeholder = "Birth Date", @class = "form-control" })
+        </div>
         @Html.ValidationMessageFor(m => m.Customers.Birthday)
     </div>
     <div class="checkbox">
@@ -29,7 +35,9 @@
     </div>
     @Html.HiddenFor(m => m.Customers.Id)
     @Html.AntiForgeryToken()
-    <Button type="submit" class="btn btn-primary">Save</Button>
+    <Button type="submit" class="btn btn-primary">
+        <i class="fa fa-check-circle"></i> Save
+    </Button>
 }
 
 @section scripts
